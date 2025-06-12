@@ -6,7 +6,7 @@ from platforms.zepto import fetch_zepto_prices
 import asyncio
 
 async def main():
-    query = "yakult"  # Replace with what you want
+    query = input("Enter the product you want to search: ")
     
     pretty_print(text="QuickCom",font="slant" )
 
