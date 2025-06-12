@@ -1,3 +1,7 @@
 \env
 .env
 \__pycache__
+
+__zepto_prices.csv
+__blinkit_prices.csv
+__instamart_prices.csv

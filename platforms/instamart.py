@@ -1,7 +1,7 @@
 from playwright.async_api import async_playwright
 
-async def fetch_swiggy_prices(query: str):
-    url = f"https://www.swiggy.com/instamart/search?custom_back=true&query={query}"
+async def fetch_instamart_prices(query: str):
+    url = f"https://www.instamart.com/instamart/search?custom_back=true&query={query}"
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         page = await browser.new_page()

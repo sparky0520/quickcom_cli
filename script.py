@@ -1,5 +1,5 @@
 from helpers import *
-from platforms.instamart import fetch_swiggy_prices
+from platforms.instamart import fetch_instamart_prices
 from platforms.blinkit import fetch_blinkit_prices
 from platforms.zepto import fetch_zepto_prices
 
@@ -15,10 +15,10 @@ async def main():
     save_to_file(blinkit, "__blinkit_prices", "csv")
     print("Blinkit Results generated! Please checkout the file created.")
 
-    print("\n\nFetching Swiggy...")
-    swiggy = await fetch_swiggy_prices(query)
-    save_to_file(swiggy, "__swiggy_prices", "csv")
-    print("Swiggy Results generated! Please checkout the file created.")
+    print("\n\nFetching instamart...")
+    instamart = await fetch_instamart_prices(query)
+    save_to_file(instamart, "__instamart_prices", "csv")
+    print("instamart Results generated! Please checkout the file created.")
 
     print("\n\nFetching Zepto...")
     zepto = await fetch_zepto_prices(query)
